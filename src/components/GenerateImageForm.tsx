@@ -64,7 +64,7 @@ export function GenerateImageForm({ handleGetImage }: GenerateImageFormProps) {
       text: textWithKeyword,
     };
     
-    // Call the provided handler function with the sound request
+    // Call the provided handler function with the image request
     handleGetImage(soundRequest);
     
     setFormSubmitting(false);
@@ -134,7 +134,7 @@ export function GenerateImageForm({ handleGetImage }: GenerateImageFormProps) {
             )}
           />
           {/* Submit button */}
-          <Button type="submit" disabled={formSubmitting}>
+          <Button type="submit" id="onEnter" disabled={formSubmitting}>
             Submit
           </Button>
         </form>

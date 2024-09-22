@@ -16,9 +16,6 @@ export default function Header() {
           <li>
             <Link href='/dashboard'>DashBoard</Link>
           </li>
-          <li>
-            <Link href='/gallery'>Gallery</Link>
-          </li>
         </ul>
         <div className='flex items-center justify-between gap-6 '>
         <ModeToggle />

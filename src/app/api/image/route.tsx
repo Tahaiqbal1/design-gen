@@ -38,9 +38,6 @@ export async function POST(request: Request): Promise<Response> {
   // Get the generated image data as an ArrayBuffer
   const imageData = await response.arrayBuffer();
 
-  console.log(imageData.byteLength)
-  console.log('hellow bro')
-  console.log(response.status)
 
   // Check if the HTTP response is not successful
   if (!response.ok) {
@@ -50,7 +47,7 @@ export async function POST(request: Request): Promise<Response> {
   // Create an HTTP response with the generated image data
   return new Response(imageData, {
     headers: {
-      "Content-Type": "image/jpeg", // Adjust the content type based on the actual audio format
+      "Content-Type": "image/jpeg", // Adjust the content type based on the actual image format
     },
   });
 }
